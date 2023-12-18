@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import FetchingData from "./components/FetchingData";
+import NewsCardItem from "./components/NewsCardItem/NewsCardItem";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path='/postlist' element={<FetchingData />} />
+                <Route
+                    path='/postlist/:id'
+                    element={<NewsCardItem image={""} body={""} />}
+                />
+                <Route
+                    path='/*'
+                    element={<Navigate to='/postlist' replace />}
+                />
+            </Routes>
+        </BrowserRouter>
+    );
+};
 
 export default App;

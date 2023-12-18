@@ -1,0 +1,39 @@
+.card {
+    width: 300px;
+    height: 310px;
+    background-color: #DCDCDC;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: 0.5px solid #C0C0C0;
+}
+
+.card_text {
+    font-family: 'Lora', serif;
+    margin: 5px;
+}
+
+.card_button {
+    margin: auto 10px 10px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    align-self: flex-end;
+    background-color: gray;
+    cursor: pointer;
+    font-family: 'Lora', serif;
+}
+
+.card_img {
+    height: 175px;
+    border-radius: 16px;
+}
+
+.post_date {
+    margin: 5px 5px 0px;
+    color: #696969;
+    font-size: 14px;
+    font-family: 'Lora', serif;
+}
