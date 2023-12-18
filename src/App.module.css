@@ -10,7 +10,15 @@
 
 .container {
     width: 1180px;
+}
+
+.card_list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.post_filter {
+    display: flex;
+    justify-content: center;
 }

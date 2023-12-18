@@ -13,7 +13,7 @@ const NewsCard: FC<ICardProps> = ({ image, webTitle, webPublicationdate }) => {
         <div className={cl.card}>
             <img src={image} alt='#' className={cl.card_img} />
             <div className={cl.post_date}>
-                {moment(webPublicationdate).format("DD MMMM YYYY HH:mm")}{" "}
+                {moment(webPublicationdate).format("DD MMMM YYYY HH:mm")}
             </div>
             <div className={cl.card_text}>{webTitle}</div>
             <button className={cl.card_button}>Details</button>
